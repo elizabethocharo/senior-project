@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +11,8 @@ header {
     background-color: #000;
     padding: 20px 0;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,10 +26,10 @@ nav{
 
 .nav-links {
     list-style: none;
+    display: flex;
 }
 
 .nav-links li {
-    display: inline;
     margin-right: 20px;
 }
 
@@ -35,22 +37,80 @@ nav{
     color: #fff;
     text-decoration: none;
 }
-.authentication{
+
+.authentication {
     list-style: none;
     display: flex;
-
 }
-.authentication li a{
+
+.authentication li a {
     color: #fff;
     text-decoration: none;
     margin-left: 10px;
     padding: 10px;
     border: 1px solid white;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
-.authentication li a:hover{
+.authentication li a:hover {
     background-color: goldenrod;
     color: #000;
     transition: 0.4s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* small screen styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .logo{
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-links li a {
+        padding: 10px;
+        width: 100%;
+        display: block;
+    }
+
+    .authentication {
+        display: none;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .authentication li a {
+        margin-left: 0;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+        cursor: pointer;
+        font-size: 24px;
+        color: goldenrod;
+    }
+
+    .hamburger.active + .nav-links,
+    .hamburger.active + .nav-links + .authentication {
+        display: flex;
+    }
 }
