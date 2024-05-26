@@ -6,26 +6,28 @@
     <title>Luggage Storage Solution</title>
     <link rel="stylesheet" href="client_dashboard.css"> 
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Sevillana&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <!-- Navigation menu -->
         <nav>
-            <div class="logo">
-                <h1>Luggage Storage</h1>
-            </div>
-            <div class="hamburger">
-                <span>Luggage Storage</span>
+            <div class="hamburger" id="hamburger">
+                <h3>Luggage Storage Solutions</h3>
                 <span>&#9776;</span>
             </div>
             <ul class="nav-links">
                 <li><a href="/client_dashboard.html">Home</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
-            <ul class="authentication">
-                <li><a href="/login.html">Login</a></li>
-                <li><a href="/register.html">Register</a></li>
+            <div class="logo">
+                <h1>Luggage Storage Solutions</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/how-it-works/how-it-works.html">How&nbsp;it&nbsp;Works</a></li>
+                <li><a href="#">AboutUS</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -34,8 +36,13 @@
     <section class="hero">
         <div class="hero-content">
             <h2>TRAVEL WITH EASE</h2>
-            <p>Store your luggage securely while you explore the city. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus autem repudiandae cum error itaque. Velit enim, commodi ea quibusdam id, molestiae saepe harum quis incidunt dolorum, architecto iusto vero odit.</p>
-            <a href="/register" class="btn">Register</a>
+            <p>Step into hassle-free travel with our unique luggage storage solution. We offer more than just a place to stow your bags – we provide a seamless experience tailored to your needs. Whether it's our convenient locations, flexible booking options, or top-notch security measures, we strive to make your journey as smooth as possible. Say goodbye to lugging heavy bags and hello to a new level of convenience with us</p>
+            <!-- <a href="/register" class="btn">Register</a> -->
+             <div class="auths">
+                <p><a href="/login.html" class="btn">Login</a></p>
+                <p><a href="/register.html" class="btn" >Register</a></p>
+            </div>
+            
         </div>
         
         <div class="overlay"></div><!-- Dark overlay to ensure the above content is visible -->
@@ -47,31 +54,10 @@
     </section>
 
     <!-- How it works -->
-    <section class="how-it-works">
-        <h2>How it Works</h2>
-        <p>Our Luggage Storage Solution System makes it easy to find, book, and access secure storage for your belongings.</p>
-        <div class="steps">
-            <div class="step">
-                <h3>Search for Storage</h3>
-                <p>Enter your location and dates to find available storage options.</p>
-            </div>
-            <div class="step">
-                <h3>Book Your Storage</h3>
-                <p>Select the perfect storage location and time slot for your needs.</p>
-            </div>
-            <div class="step">
-                <h3>Drop Off Your Luggage</h3>
-                <p>Bring your luggage to the storage location and check it in.</p>
-            </div>
-            <div class="step">
-                <h3>Pick Up Your Luggage</h3>
-                <p>Retrieve your luggage when you're ready to continue your journey.</p>
-            </div>
-        </div>
-    </section>
+   
     <!-- services -->
     <section class="services-section">
-        <h2>Our Services</h2>
+        <h2>Key Features</h2>
         <div class="services">
             <div class="service-card">
                 <h3>Secure Storage</h3>
@@ -88,7 +74,7 @@
         </div>
     </section>
     <footer>
-        <p>&copy; 2024 Luggage Storage Solution. All rights reserved.</p>
+        <p>&copy; 2024 <span>Luggage Storage Solution</span>. All rights reserved.</p>
     </footer>
 </body>
 <script>

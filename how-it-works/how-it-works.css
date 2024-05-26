@@ -1,0 +1,48 @@
+
+/* How it works Sections */
+.how-it-works {
+    border-top: 1px solid rgb(53, 53, 53);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    color: goldenrod;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.how-it-works p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1 1 200px;
+    margin: 20px;
+    max-width: 250px;
+}
+
+.step img {
+    width: 50px;
+    height: 50px;
+}
+
+.step h3 {
+    color: white;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.step p {
+    color: #666;
+}
+
+
