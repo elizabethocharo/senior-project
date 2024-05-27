@@ -48,6 +48,12 @@ section {
     color: #666;
     text-decoration: none;
 }
+.error, #login-error{
+    color: rgb(252, 7, 7);
+}
+.success, #login-success{
+    color: green;
+}
 
 .btn {
     width: 100%;

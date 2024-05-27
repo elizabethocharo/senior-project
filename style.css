@@ -84,6 +84,32 @@ footer span{
     font-style: normal;
 }
 
+/* Profile Section Styles */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: #fff;
+    font-size: 18px;
+}
+
+.profile span {
+    margin-right: 10px;
+}
+
+.profile span {
+    color: goldenrod;
+}
+.logout{
+    color: red;
+    border: 2px solid goldenrod;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
 /* small screen styles */
 @media (max-width: 768px) {
     nav {
