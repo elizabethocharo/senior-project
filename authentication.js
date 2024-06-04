@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
                  loginSuccess.textContent="Login Successful. Redirecting to Dashboard..."
                  setTimeout(()=>{
                      loginSuccess.textContent = '';
-                     window.location.href = '/client_dashboard.html';
+                     window.location.href = 'home.html';
                  }, 5000)
             })
             .catch((error) => {

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luggage Storage</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="spaces.css">
+</head>
+<body>
+
+    <header>
+        <!-- Navigation menu -->
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <h3>Luggage Storage Solutions</h3>
+                <span>&#9776;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/book-space/spaces.html">Storage</a></li>
+            </ul>
+            <div class="logo">
+                <h1>Luggage Storage Solutions</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/how-it-works/how-it-works.html">How&nbsp;it&nbsp;Works</a></li>
+                <li><a href="#">AboutUS</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Find a Space to Store Your Luggage</h1>
+            <div class="search-bar">
+                <select name="location" id="locationSelect">
+                    <option value="">Search for a location</option>
+                    <!-- Options will be dynamically generated here -->
+                </select>
+                <button>Search</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="locations-section">
+        <div class="container" id="locationContainer">
+            <!-- Location cards will be dynamically generated here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 <span>Luggage Storage Solution</span>. All rights reserved.</p>
+    </footer>
+    
+</body>
+<script src="/script.js"></script>
+<script src="stores/stores.js"></script>
+</html>
