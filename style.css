@@ -180,4 +180,7 @@ footer span{
     nav.active .authentication {
         display: flex;
     }
+    .hero-content p{
+        font-size: 0.8rem;
+    }
 }
