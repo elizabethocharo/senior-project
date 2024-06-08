@@ -1,0 +1,87 @@
+
+  
+  
+  .location-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .location-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .location-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .location-form input, .location-form select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .location-form button {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .location-form button:hover {
+    background: #555;
+  }
+
+
+  /* show available locations */
+  .locations-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: scroll;
+  }
+
+  .locations-table th, .locations-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .locations-table th {
+    background-color: #f2f2f2;
+  }
+
+  .locations-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .locations-table tbody tr:hover {
+    background-color: #e6e6e6;
+  }
+
+  .locations-table a {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .add-new{
+   margin-top: 20px;
+   padding: 10px;
+   border-radius: 10px;
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+  
+  }
+  

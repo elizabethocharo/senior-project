@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="admin-container" id="dashboard-stats">
+    <button id="nav-toggle" class="nav-toggle">☰</button>
+    <nav class="side-nav">
+      <div class="logo">
+        <h1>Luggage Storage</h1>
+      </div>
+      <ul>
+        <li><a href="/admin" data-section="dashboard" class="active">Dashboard</a></li>
+        <li><a href="/admin/manage_locations.html" data-section="manage-locations">Manage Locations</a></li>
+        <li><a href="/admin/bookings.html" data-section="bookings">Bookings</a></li>
+        <li><a href="#" data-section="users">Users</a></li>
+        <li><a href="#" data-section="reports">Reports</a></li>
+        <li><a href="#" data-section="settings">Settings</a></li>
+      </ul>
+    </nav>
+    <main class="main-content">
+      <section id="dashboard" class="active">
+        <h2 style="text-align: center;">Dashboard</h2>
+        <h4>Overview</h4>
+        <div class="cards-container">
+          <div class="card">
+            <h3>Total Bookings</h3>
+            <p id="total-bookings">0</p>
+          </div>
+          <div class="card">
+            <h3>Pending Bookings</h3>
+            <p id="pending-bookings">0</p>
+          </div>
+          <div class="card">
+            <h3>Active Locations</h3>
+            <p id="active-locations">0</p>
+          </div>
+          <div class="card">
+            <h3>All Users</h3>
+            <p id="all-users">0</p>
+          </div>
+        </div>
+      </section>
+     
+    </main>
+  </div>
+  <script src="/admin/scripts/admin.js"></script>
+
+</body>
+</html>

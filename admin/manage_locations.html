@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="/admin/css/manage_location.css">
+</head>
+<body>
+  <div class="admin-container" id="manage-locations-page">
+    <button id="nav-toggle" class="nav-toggle">☰</button>
+    <nav class="side-nav">
+      <div class="logo">
+        <h1>Luggage Storage</h1>
+      </div>
+      <ul>
+        <li><a href="/admin" data-section="dashboard">Dashboard</a></li>
+        <li><a href="/admin/manage_locations.html" data-section="manage-locations" class="active">Manage Locations</a></li>
+        <li><a href="/admin/bookings.html" data-section="bookings">Bookings</a></li>
+        <li><a href="#" data-section="users">Users</a></li>
+        <li><a href="#" data-section="reports">Reports</a></li>
+        <li><a href="#" data-section="settings">Settings</a></li>
+      </ul>
+    </nav>
+    <main class="main-content">
+      <section id="manage-locations">
+        <h2 style="text-align: center;">Manage Locations</h2>
+        <table class="locations-table">
+          <thead>
+            <tr>
+              <th>Storage&nbsp;Name</th>
+              <th>Location</th>
+              <th>Streets</th>
+              <th>Price</th>
+              <th>Closing&nbsp;Time</th>
+              <th>Status</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="locations-body">
+            <!-- Table rows will be dynamically added here -->
+          </tbody>
+        </table>
+    
+       <button class="add-new" > <a href="/admin/add_locations.html" style="text-decoration: none;">Add New Locations</a></button>
+      </section>
+    </main>
+    
+  </div>
+  <script src="/admin/scripts/admin.js"></script>
+</body>
+</html>

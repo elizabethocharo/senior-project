@@ -33,7 +33,11 @@
         <div class="container">
             <h1>Book Your Luggage Storage</h1>
             <div class="store-details">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.23721223003!2d35.077344000000004!3d0.2522562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17805d7626cb9743%3A0xc93043887737d9b7!2sUniversity%20Of%20Eastern%20Africa%20-%20Baraton%20(Main%20Campus)!5e0!3m2!1sen!2ske!4v1717399353792!5m2!1sen!2ske" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="loading-indicator" style="text-align: center;">
+                    <p>Loading map...</p>
+                    <div class="spinner"></div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.23721223003!2d35.077344000000004!3d0.2522562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17805d7626cb9743%3A0xc93043887737d9b7!2sUniversity%20Of%20Eastern%20Africa%20-%20Baraton%20(Main%20Campus)!5e0!3m2!1sen!2ske!4v1717399353792!5m2!1sen!2ske" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onload="document.getElementById('loading-indicator').style.display='none';"></iframe>
                 <div class="details">
                     <h2>Better Safe Storage</h2>
                     <p><b>Address:</b> 123 Main St, City, Country</p>
@@ -45,16 +49,25 @@
             <div class="booking-form">
                 <h2>Book Now</h2>
                 <form action="confirmation.html" method="POST">
-                    <label for="luggage-type">Luggage Type:</label>
+                    <label for="luggage-type">Luggage Size:</label>
                     <select name="luggage-type" id="luggage-type">
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
                     </select>
+                    <label for="luggage-type">Luggage Quality/Value:</label>
+                    <select name="luggage-value" id="luggage-value">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <span style="font-size: 0.8rem; color: gray;">Storage costs will vary based on the value of your luggage. Higher-value items will be stored with extra care, incurring higher fees.</span>
+
                     <label for="start-time">Start Time:</label>
                     <input type="datetime-local" id="start-time" name="start-time" required>
                     <label for="end-time">End Time:</label>
                     <input type="datetime-local" id="end-time" name="end-time" required>
+                    <span style="font-size: 0.8rem; color: gray;"><b>Note:</b> Cost will be calculated depending on the time you pick your luggage but not the time you put above.</span>
                     <button type="submit">Submit</button>
                 </form>
             </div>
@@ -65,4 +78,18 @@
         <p>&copy; 2024 Luggage Storage Solutions. All rights reserved.</p>
     </footer>
 </body>
+<style>
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border-left-color: #09f;
+      animation: spin 1s ease infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    </style>
 </html>

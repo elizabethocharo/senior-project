@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <div class="admin-container">
+    <button id="nav-toggle" class="nav-toggle">☰</button>
+    <nav class="side-nav">
+      <div class="logo">
+        <h1>Luggage Storage</h1>
+      </div>
+      <ul>
+        <li><a href="/admin" data-section="dashboard">Dashboard</a></li>
+        <li><a href="/admin/manage_locations.html" data-section="manage-locations">Manage Locations</a></li>
+        <li><a href="/admin/bookings.html" data-section="bookings" class="active">Bookings</a></li>
+        <li><a href="#" data-section="users">Users</a></li>
+        <li><a href="#" data-section="reports">Reports</a></li>
+        <li><a href="#" data-section="settings">Settings</a></li>
+      </ul>
+    </nav>
+    <main class="main-content">
+      <h2>Guidelines for Getting the URL to Embed a Location in Google Maps:</h2>
+      <ol>
+        <li>Open Google Maps in your web browser.</li>
+        <li>Search for the location you want to embed.</li>
+        <li>Click on the location marker to open the details.</li>
+        <li>Click the "Share" button or select "Embed a map" option.</li>
+        <li>Copy the URL provided in the embed code.</li>
+        <li>Paste the URL in the form</li>
+      </ol>
+    </main>
+  </div>
+  <script src="/admin/scripts/admin.js"></script>
+</body>
+</html>

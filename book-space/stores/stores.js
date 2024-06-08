@@ -1,4 +1,3 @@
-// Array of storage details
 const storageLocations = [
   {
     name: "Eastleigh Storage Solutions",
@@ -83,10 +82,14 @@ function generateLocationCards() {
   const container = document.getElementById("locationContainer");
 
   storageLocations.forEach(location => {
-      const card = `
-          <div class="location-card">
-              <iframe src="${location.mapUrl}" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <div class="location-details">
+    const card = `
+      <div class="location-card">
+        <div id="loading-indicator-${location.location}" class="loading-indicator">
+          <p>Loading map...</p>
+          <div class="spinner"></div>
+        </div>
+        <iframe src="${location.mapUrl}" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onload="document.getElementById('loading-indicator-${location.location}').style.display='none';"></iframe>
+        <div class="location-details">
                   <h2>${location.name}</h2>
                   <p class="address">
                       <span><b>Streets:</b> ${location.streets}</span>
@@ -94,15 +97,13 @@ function generateLocationCards() {
                   </p>
                   <span style="font-size: 0.8rem; color: gray;">Price may vary depending on the laggage type</span>
                   <p style="color: green;"><b>Open</b> upto ${location.openUntil}</p>
-                  <button><a href="/book-space/book.html" style="text-decoration: none; color: white;">Book Now</a></button>
-              </div>
-          </div>
-      `;
-
-      container.innerHTML += card;
+                  <button><a href="/book-space/book.html" style="text-decoration: none; color: white;">View Details</a></button>
+        </div>
+    `;
+    container.innerHTML += card;
   });
 }
 
-// Call the function to generate location cards
+// Call the functions to generate options and location cards
 generateLocationOptions();
 generateLocationCards();
